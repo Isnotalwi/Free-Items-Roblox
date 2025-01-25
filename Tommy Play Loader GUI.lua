@@ -106,6 +106,17 @@ task.spawn(function()
 end)
 end) 
 
+Good:AddButton("Inf Money V2 [Lags]","Need Bike fiest", function()
+task.spawn(function() 
+    pcall(function() 
+        game:GetService("ReplicatedStorage").lib.Network["Equip Bike"]:FireServer(true)
+        for i = 10, 10000 do
+            game:GetService("ReplicatedStorage").lib.Network["Bike Trick"]:FireServer("360")
+        end
+    end)
+end)
+end) 
+
 Good:AddButton("Buy All item","?", function()
 for _, item in ipairs(items) do
     game:GetService("ReplicatedStorage").lib.Network.ShopPurchaseItem:InvokeServer({"TokenClothing", item})
