@@ -70,15 +70,14 @@ local function playNotificationSound()
     notificationSound:Play()
 end
 
-local function Notify(message)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Alwi Hub Notice",
+local function sendNotification(title, message)
+    cloneref(game:GetService("StarterGui")):SetCore("SendNotification", {
+        Title = title,
         Text = message,
+        Icon = "http://www.roblox.com/asset/?id=92639750101948",
         Duration = 5,
-        Icon = "rbxassetid://8904334671"
     })
 end
-
 local HWID
 
 -- Using 'cloneref' function as defined
@@ -98,6 +97,7 @@ local MainTab = Window:NewTab("Main")
 -- Information Section
 local Logged = Home:AddSection("Information Account")
 local Good = MainTab:AddSection("Auto Farms")
+local Others = MainTab:AddSection("Others Items")
 local Discord = Home:AddSection("Discord/Support")
 
 Logged:AddButton("Game Name: " .. gameName, "Name of Game Detected", function() end)
@@ -151,11 +151,18 @@ Good:AddDropdown("Select A Clothing Item", "Choose a clothing item to purchase",
     local item = selected
     game:GetService("ReplicatedStorage").lib.Network.ShopPurchaseItem:InvokeServer({"TokenClothing", item})
 end)
-Good:AddButton("Get Hotdog Golden Bagde","?", function() 
+Others:AddButton("Get Hotdog Golden Bagde","?", function() 
+sendNotification("Script", "In Your Clipboard!") 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/Tommy%20Play%203%20Instant%20Golden%20item%20and%20more.lua"))()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/Tommy%20Play%203%20Instant%20Golden%20item%20and%20more.lua'))()") 
 end) 
-Good:AddButton("Get Hotdog Bagde","?", function()
+Others:AddButton("Get Hotdog Bagde","?", function() 
+sendNotification("Script", "In Your Clipboard! Executor To Tommy Play") 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/FREE%20ITEMS%20Tommy%20Play.lua"))()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/FREE%20ITEMS%20Tommy%20Play.lua'))()") 
+end) 
+
+Others:AddButton("Get Hand LQBT (Tommy Play)","?", function() 
+sendNotification("Script", "In Your Clipboard! Executor To Tommy Play") 
+setclipboard('game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-878, 363, -633)}):Play()')
 end) 
