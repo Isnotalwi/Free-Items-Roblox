@@ -100,6 +100,7 @@ local Logged = Home:AddSection("Information Account")
 local Good = MainTab:AddSection("Auto Farms")
 local Others = MainTab:AddSection("Others Items")
 local T = MainTab:AddSection("Teleport Game")
+local A = MainTab:AddSection("World 2")
 local Discord = Home:AddSection("Discord/Support")
 
 Logged:AddButton("Game Name: " .. gameName, "Name of Game Detected", function() end)
@@ -169,6 +170,26 @@ sendNotification("Script", "In Your Clipboard! Executor To Tommy Play")
 setclipboard('game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-878, 363, -633)}):Play()')
 end) 
 
+A:AddButton("Enter World Chapter 2 (Click This First)","?", function() 
+game:GetService("ReplicatedStorage").lib.Network.MoveToSection:FireServer("Bronx")
+end) 
+A:AddButton("Pizza Backpack (Requiment Equip Hotdog Backpack Ur avatar)","?", function() 
+ 
+local TweenService = game:GetService("TweenService")
+
+local tweenInfo1 = TweenInfo.new(2)
+local goal1 = {CFrame = CFrame.new(4027, 165, 357)}
+local tween1 = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tweenInfo1, goal1)
+
+local tweenInfo2 = TweenInfo.new(2)
+local goal2 = {CFrame = CFrame.new(4037, 135, 355)}
+local tween2 = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tweenInfo2, goal2)
+
+tween1:Play()
+tween1.Completed:Wait()
+
+tween2:Play()
+end) 
 
 T:AddButton("Teleport to Tommy Play","?", function() 
 game:GetService('TeleportService'):Teleport(9129288160, game.Players.LocalPlayer)
