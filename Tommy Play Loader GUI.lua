@@ -35,8 +35,29 @@ local items = {
     "Blue Sport Cap",
     "bag1",
     "Crossover Bag Blue",
-    "Crossover Bag Red"
+    "Crossover Bag Red",
+    "Orange Stripe Hoodie",
+    "Black Sport Cap",
+    "Blue Denim Shorts",
+    "White Long Sleeve Workout Top",
+    "Purple and Gold Ringer Tee",
+    "Charcoal Grey Jacket",
+    "Pink Bucket Hat",  -- Duplicate item removed
+    "Orange Workout Pants",
+    "Green Workout Shorts",
+    "Beige Crossover Bag",
+    "Black Leather Backpack",
+    "Red Beanie Hat",
+    "White TJ New York Hoodie",  -- Duplicate item removed
+    "Gray Zipper Jacket",
+    "Yellow Knit Sweater",
+    "Turquoise Windbreaker",
+    "Brown Cargo Pants",
+    "Black Workout Tank Top",
+    "Blue Plaid Shirt",
+    "Cream Canvas Tote Bag"
 }
+
 
 local function playNotificationSound()
     local soundService = game:GetService("SoundService")
