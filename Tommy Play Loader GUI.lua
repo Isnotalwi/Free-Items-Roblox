@@ -94,10 +94,12 @@ local Window = lib:CreateWindow(gameName)
 local Home = Window:NewTab("Home")
 local MainTab = Window:NewTab("Main")
 
+
 -- Information Section
 local Logged = Home:AddSection("Information Account")
 local Good = MainTab:AddSection("Auto Farms")
 local Others = MainTab:AddSection("Others Items")
+local T = MainTab:AddSection("Teleport Game")
 local Discord = Home:AddSection("Discord/Support")
 
 Logged:AddButton("Game Name: " .. gameName, "Name of Game Detected", function() end)
