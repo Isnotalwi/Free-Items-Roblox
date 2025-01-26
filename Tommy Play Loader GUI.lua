@@ -166,3 +166,9 @@ Others:AddButton("Get Hand LQBT (Tommy Play)","?", function()
 sendNotification("Script", "In Your Clipboard! Executor To Tommy Play") 
 setclipboard('game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-878, 363, -633)}):Play()')
 end) 
+
+
+T:AddButton("Teleport to Tommy Play","?", function() 
+game:GetService('TeleportService'):Teleport(9129288160, game.Players.LocalPlayer)
+                       
+ end) 
