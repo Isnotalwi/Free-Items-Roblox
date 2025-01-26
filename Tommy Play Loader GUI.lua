@@ -152,7 +152,7 @@ Good:AddDropdown("Select A Clothing Item", "Choose a clothing item to purchase",
     game:GetService("ReplicatedStorage").lib.Network.ShopPurchaseItem:InvokeServer({"TokenClothing", item})
 end)
 Others:AddButton("Get Hotdog Golden Bagde","?", function() 
-sendNotification("Script", "In Your Clipboard!") 
+sendNotification("Script", "In Your Clipboard! You need Teleport to Tommy play to run this") 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/Tommy%20Play%203%20Instant%20Golden%20item%20and%20more.lua"))()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/Isnotalwi/Roblox-Script/refs/heads/main/Tommy%20Play%203%20Instant%20Golden%20item%20and%20more.lua'))()") 
 end) 
