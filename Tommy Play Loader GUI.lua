@@ -170,14 +170,12 @@ sendNotification("Script", "In Your Clipboard! Executor To Tommy Play")
 setclipboard('game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-878, 363, -633)}):Play()')
 end) 
 
-A:AddButton("Enter World Chapter 2 (Click This First)","?", function() 
-game:GetService("ReplicatedStorage").lib.Network.MoveToSection:FireServer("Bronx")
+A:AddButton("Just Note! How to Get TJ Giant Burger","?", function() 
+sendNotification("Alwi Hub", "Teleport Chapter 2 (Bronx) Dont Forgot Equip The Hotdog from ur Avatar") 
 end) 
 A:AddButton("Get TJ Giant Burger (Requiment Equip Hotdog Backpack Ur avatar)","?", function() 
- 
 local TweenService = game:GetService("TweenService")
-
-local tweenInfo1 = TweenInfo.new(2)
+local tweenInfo1 = TweenInfo.new(2) 
 local goal1 = {CFrame = CFrame.new(4027, 165, 357)}
 local tween1 = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, tweenInfo1, goal1)
 
