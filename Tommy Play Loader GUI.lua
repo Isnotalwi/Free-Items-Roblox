@@ -173,7 +173,7 @@ end)
 A:AddButton("Enter World Chapter 2 (Click This First)","?", function() 
 game:GetService("ReplicatedStorage").lib.Network.MoveToSection:FireServer("Bronx")
 end) 
-A:AddButton("Pizza Backpack (Requiment Equip Hotdog Backpack Ur avatar)","?", function() 
+A:AddButton("Get TJ Giant Burger (Requiment Equip Hotdog Backpack Ur avatar)","?", function() 
  
 local TweenService = game:GetService("TweenService")
 
